@@ -1,0 +1,32 @@
+body{
+    background-image: linear-gradient(to left, rgba(122, 251, 255, 0.5), rgba(120, 241, 191, 0.5));
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 100px;
+    box-shadow: 0px 10px 10px 0px darkgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+.dropdown-content a {
+    color: darkgray;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}   
+
+.dropdown-content a:hover {
+    background-color:darkturquoise;
+    color:white;
+}
+
+
+
+         

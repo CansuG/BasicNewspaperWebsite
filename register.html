@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <style>
+            body::before{
+                content: "";
+                background-image: url(landscape.jpeg);
+                background-size: cover;
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                opacity: 0.6;
+            }
+
+            h1{
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mx-auto bg-info text-white text-center shadow">
+            <h1 class="display-1">REGISTER</h1>
+        </div>
+        
+        <div class="container pt-4 col-sm-4">
+            <form name="form" onsubmit="return validateForm()" action="calculator.html" method="POST" required>
+                <table id="table" class="table table-responsive-sm text-dark table-hover">
+                    <tr class="table">
+                        <td><label for="name">Name :</label></td>
+                        <td><input type="text" class="form-control" name="name" ></td>
+                    </tr>
+                    <tr class="table">
+                        <td><label for="name">Surname :</label></td>
+                        <td><input type="text" class="form-control" name="surname" ></td>
+                    </tr>
+                    <tr class="table">
+                        <td><lable for="birthdate">Date Of Birth :</lable></td>
+                        <td><input type="text" class="form-control" placeholder="dd/mm/yyyy" name="birthdate" ></td>
+                    </tr>
+                    <tr class="table">
+                        <td><label for="mail">E-mail :</label></td>
+                        <td><input type="text" class="form-control" placeholder=" id@domain " name="mail" ></td>
+                    </tr>
+                    <tr class="table">
+                        <td><label for="password">Password :</label></td>
+                        <td><input type="password" class="form-control" name="password" ></td>
+                    </tr>
+                    <tr class="table">
+                        <td>Gender :</td>
+                        <td>
+                            <select id="gender" name="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="table">
+                        <td><br>Mark Your Interests<br></td>
+                    </tr>
+                    <tr class="table">
+                        <td>
+                            <input type="checkbox" name="1" value="auto-and-vehicle">
+                            <label class="form-check-label" for="1">Autos and Vehicles</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="2" value="comedy">
+                            <label class="form-check-label" for="2">Comedy</label>
+                        </td>
+                    </tr>
+                    <tr class="table">
+                        <td>
+                            <input type="checkbox" name="3" value="education">
+                            <label class="form-check-label" for="3">Education</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="4" value="film-animation">
+                            <label class="form-check-label" for="4">Film and Animation</label>
+                        </td>
+                    </tr>
+                    <tr class="table">
+                        <td>
+                            <input type="checkbox" name="5" value="gaming">
+                            <label class="form-check-label" for="5">Gaming</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="6" value="music">
+                            <label class="form-check-label" for="6">Music</label>
+                        </td>
+                    </tr>
+                    <tr class="table">
+                        <td>
+                            <input type="checkbox" name="7" value="politics">
+                            <label class="form-check-label" for="7">Politics</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="8" value="pets-animals">
+                            <label class="form-check-label" for="8">Pets and Animals</label>
+                        </td>
+                    </tr>
+                    <tr class="table">
+                        <td>
+                            <input type="checkbox" name="9" value="science-technology">
+                            <label class="form-check-label" for="9">Science-Technology</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="10" value="sports">
+                            <label class="form-check-label" for="10">Sports</label>
+                        </td>
+                    </tr>
+                </table>
+
+                <div>
+                    <button type="submit" class="btn btn-dark" name="submit">Submit</button><br><br>
+                    <input type="reset" class="btn btn-dark" value="Reset">
+                </div>
+            </form>
+            
+            <br><a href="home.html"><img src="homeicon.png" class="rounded-circle" alt="Home" width="30" height="30" ></a>
+            
+        </div>
+
+        
+
+        
+        
+        <footer class="container position-static text-center text-black">
+            <hr>Copyright 2021<br><br>
+        </footer>
+
+    </body>
+    
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="commonparts.css">
+        <style>
+            h3:hover{
+                font-size: xx-large;
+            }
+            div img{
+                opacity: 0.5;
+            }
+            img:hover{
+                opacity: 1.0;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container mx-auto bg-info text-white text-center shadow">
+            <h1 class="display-1">WORLD NEWS</h1>
+        </div>
+        
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark justify-content-center shadow">
+            <a class="navbar-brand" href="home.html">
+                <img src="logo.jpeg" alt="logo" widht="50" height="50">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link active" href="news.html"> NEWS</a></li>
+                <li class="nav-item"><a class="nav-link" href="sport.html">SPORT</a></li>
+                <li class="nav-item"><a class="nav-link" href="travel.html">TRAVEL</a></li>
+                <li class="nav-item"><a class="nav-link" href="culture.html">CULTURE</a></li>
+                <li class="dropdown">
+                    <a class="nav-link">MORE</a>
+                    <div class="dropdown-content"> 
+                        <a href="contactme.html">Contact Me</a>
+                        <a href="aboutme.html">About Me</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="signin.html">SIGN IN</a></li>
+            </ul>
+        </nav>
+
+        <div class="container p-4">
+            <form id="search" class="form-inline float-sm-right" action="https://www.google.com/search" method="get">
+                <div class="form-group">
+                    <input class="form-control" name="q" type="search" placeholder="Type...">
+                    <button type="submit" class="btn btn-info float-sm-right">Search</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container p-5">
+            <h3 class="p-4 m-4">Nasa Successfully Flies Small Helicopter on Mars</h3>
+            <div class="row">
+                <div class="col-sm">
+                    <img src="ingenuity.png" class="img-fluid rounded" width="500" height="500" alt="Ingenuity"><br><br>
+                </div>
+    
+                <div class="col-sm pt-3">
+                    <p>The American space agency has successfully flown a small helicopter on Mars. The drone, called Ingenuity, was airborne for less than a minute, but Nasa is celebrating what represents the first powered, controlled flight by an aircraft on another world.
+                        Confirmation came via a satellite at Mars which relayed the chopper's data back to Earth. The space agency is promising more adventurous flights in the days ahead.
+                        Ingenuity will be commanded to fly higher and further as engineers seek to test the limits of the technology.
+                        The rotorcraft was carried to Mars in the belly of Nasa's Perseverance Rover, which touched down in Jezero Crater on the Red Planet in February.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <footer class="container position-static text-center">
+            <hr>Copyright 2021<br><br>
+        </footer>
+
+    </body>
+</html>

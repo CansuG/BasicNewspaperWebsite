@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Me</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="commonparts.css">
+    </head>
+    <body>
+        <div class="container mx-auto bg-info text-white text-center shadow">
+            <h1 class="display-1">WORLD NEWS</h1>
+        </div>
+        
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark justify-content-center shadow">
+            <a class="navbar-brand" href="home.html">
+                <img src="logo.jpeg" alt="logo" widht="50" height="50">
+            </a>
+            <ul class="navbar-nav ">
+                <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html"> NEWS</a></li>
+                <li class="nav-item"><a class="nav-link" href="sport.html">SPORT</a></li>
+                <li class="nav-item"><a class="nav-link" href="travel.html">TRAVEL</a></li>
+                <li class="nav-item"><a class="nav-link" href="culture.html">CULTURE</a></li>
+                <li class="dropdown">
+                    <a class="nav-link active">MORE</a>
+                    <div class="dropdown-content"> 
+                        <a href="contactme.html">Contact Me</a>
+                        <a href="aboutme.html">About Me</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="signin.html">SIGN IN</a></li>
+            </ul>
+        </nav>
+
+        <div class="container p-4">
+            <form id="search" class="form-inline float-sm-right" action="https://www.google.com/search" method="get">
+                <div class="form-group">
+                    <input class="form-control" name="q" type="search" placeholder="Type...">
+                    <button type="submit" class="btn btn-info float-sm-right">Search</button>
+                </div>
+            </form>
+        </div> 
+
+        <div class="container col-sm-6 p-4">
+            <form>
+                <table class="table table-responsive-sm table-hover">
+                    <h2>Contact Me</h2>
+                    <tr>
+                        <td><label for="name">Name, Surname :</label></td>
+                        <td><input type="text" class="form-control" name="name" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail :</label></td>
+                        <td><input type="email" class="form-control" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Telephone :</label></td>
+                        <td><input type="text" class="form-control" name="phone" pattern="[0-9]{11}" placeholder="Max lenght is 11"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="issue">Issue :</label></td>
+                        <td><input type="text" class="form-control" name="issue" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message :</label></td>
+                        <td><textarea name="message" class="form-control"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" onclick="alert('Your message has been received. We will contact you as soon as possible.')" class="btn btn-info" id="Send" value="Send"></td>
+                        <td></td>
+                    </tr>
+                </table>
+                
+
+            </form>
+        </div>
+
+        <div class="container text-center">
+            <b class="p-5">OR</b><br>
+            If you want to contact me, please click to the address below:<br><br><br>
+            <a href="mailto:cansugurel@eskisehir.edu.tr">cansugurel@eskisehir.edu.tr</a><br>
+            <a href="https://www.instagram.com/cansu.gurell/">Instagram</a><br>
+            <a href="https://www.linkedin.com/in/cansu-g%C3%BCrel/">LinkedIn</a>
+
+        </div>
+
+        <footer class="container position-static text-center">
+            <hr>Copyright 2021<br><br>
+        </footer>
+
+    
+    </body>
+</html>
